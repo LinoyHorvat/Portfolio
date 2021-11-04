@@ -1,3 +1,4 @@
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -41,7 +42,7 @@ body {
 }
 
 .navbar {
-  max-width: 1224px;
+  max-width: 900px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -57,7 +58,7 @@ body {
   transition: 0.5s;
 }
 .navbar a:hover {
-  border-bottom: white 1px solid;
+  border-bottom: rgb(35,150,232) 1px solid;
 }
 .navbar a {
   color: #fff;
@@ -75,7 +76,7 @@ body {
   justify-content: center;
 }
 .site-header-content{
-  max-width: 1224px;
+  max-width: 900px;
   padding: 80px 48px 96px;
 }
 
@@ -98,7 +99,7 @@ body {
   width: 30vw;
 }
 .site-header-content h1 {
-  max-width: 1224px;
+  max-width: 900px;
 width: 100%;
 display: flex;
 align-items: center;
@@ -115,16 +116,12 @@ justify-content: center;
   margin: 20px;
   font-weight: 300;
   line-height: 2rem;
-
 }
 
 .Page1 .site-header-content p {
   font-size: 20px;
-  margin: 20px 0 30px;
+  margin: 20px 100px 30px;
   font-weight: lighter;
-  /* max-width: 600px; */
-
-
 }
 .Page1 .site-header-content p span {
   color: rgb(35,150,232);
@@ -142,12 +139,31 @@ ion-icon{
   font-size: 41px;
 }
 
-/* @media(max-width) */
+@media (min-width: 500px) and (max-width: 800px){
+  .navbar {
+    max-width: 650px;
+  }
+  .Page1 .site-header-content h1 {
+    font-size: 40px;
+  }
+  .Page1 .site-header-content h3 {
+    font-size: 20px;
+  }
+  
+  .Page1 .site-header-content p {
+    font-size: 16px;
+  }
+
+}
+@media (max-width: 500px){
+  .Page1{
+    background-color: yellow;
+  }
+}
 
 /* PAGE2 */
 .Page2{
   background-color: rgb(19,21,24);
-  position: relative;
 }
 /* PAGE3 */
 .Page3{
