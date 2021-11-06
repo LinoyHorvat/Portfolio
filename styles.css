@@ -31,9 +31,14 @@ body {
   height: 70vh;
   width: 100vw;
   color: white;
+  
 }
 .Page1{
   background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  place-items: center;
 }
 
 .manu{
@@ -78,7 +83,7 @@ body {
   justify-content: center;
 }
 .site-header-content{
-  max-width: 900px;
+  /* max-width: 900px; */
   padding: 80px 48px 96px;
 }
 
@@ -101,7 +106,7 @@ body {
   width: 30vw;
 }
 .site-header-content h1 {
-max-width: 900px;
+/* max-width: 900px; */
 width: 100%;
 display: flex;
 align-items: center;
@@ -142,6 +147,10 @@ ion-icon{
 }
 
 @media (min-width: 700px) and (max-width: 930px){
+  .container2{
+    width: 100%;
+    max-width: 650px;
+  }
   .navbar {
     max-width: 650px;
   }
@@ -156,23 +165,34 @@ ion-icon{
     font-size: 16px;
   }
   /* page 2 */
-  .main_txt2 p{
-    font-size: 12px;
+  .Page2 .main_txt2{
+    max-width: 650px;
+
+  }
+  .Page2 .main_txt2 p{
+    font-size: 16px;
     margin: 20px;
+    padding: 10px;
   }
-  .main-header h1 {
-    font-size: 30px;
-  }
-  .experience {
-    margin: 0px 20px 0px 20px;
+  .Page2 .main-header h2 {
+    font-size: 40px;
+    margin-top: 70px;
   }
   .experience li{
     font-size: 12px;
   }
-
-
+  .Page3 .main-header h2 {
+    font-size: 30px;
+    margin: 70px 20px 20px 20px;
+  }
 }
 @media (max-width: 700px){
+  .container2{
+    width:100%;
+    max-width: 300px;
+    /* padding: 10px;
+    margin: 10pxs; */
+  }
   .navbar {
     max-width: 340px;
     font-size: 12px;
@@ -181,16 +201,8 @@ ion-icon{
   .navbar .logo{
     font-size: 12px;
   }
-  .site-header-content{
-    /* max-width: 3400px; */
-    padding: 20px 10px 20px;
-  }
-  .site-title{
-    text-align: center;
-  }
   .img1{
     max-width: 90px;
-    /* margin-top: 130px; */
   }
   .Page1 .site-header-content h1 {
     font-size: 25px;
@@ -210,74 +222,98 @@ ion-icon{
     font-size: 20px;
   }
     /* page 2 */
-    .main_txt2 p{
-      font-size: 12px;
-      margin: 0px;
-    }
-    .main-header{
-      
-    }
-    .main-header h1 {
-      padding: 0px;
-      font-size: 30px;
-    }
-    .experience {
-      margin: 0px;
-      /* margin: 0px 20px 0px 20px; */
-    }
-    .experience li{
-      font-size: 12px;
-    }
+  .Page2 .main_txt2{
+    margin:50px 0px 40px 0px;
+  }
+  .Page2 .main_txt2 p{
+    margin: 0px 10px 10px 10px;
+    font-size:10px;
+    padding: 0px 10px 0px 10px;
+  }
+  .Page2 .main-header h2 {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+  .experience {
+    margin: 0px;
+    /* margin: 0px 20px 0px 20px; */
+  }
+  .experience li{
+    font-size: 12px;
+  }
+  .Page3 .main-header h2 {
+    font-size: 25px;
+    margin: 50px 20px 50px 20px;
+  }
+  .Page3 .contact-form{
+    margin-top: 20px;
+    /* max-width: 300px; */
+  }
 }
 
 /* PAGE2 */
 .Page2{
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items:center;
   place-items: center;
   background-color: rgb(19,21,24);
-  display: grid;
-  grid-template-rows:repeat(3,auto) ;
-  grid-template-areas:
-  'main-header'
-  'main_txt2'
-  'experience';
 }
 .container2{
-  max-width: 900px;
+  width:100%;
+  height: 100%;
+  /* max-width: 900px; */
   box-sizing: content-box;
-  text-align: center;
+  /* text-align: center; */
+  align-items:center;
+  /* place-items: center; */
+  justify-content: center;
+  justify-items: center;
+
 }
-.main_txt2{
+.Page2 .main_txt2{
+  width: 100%;
+  /* height: 100%; */
+  align-items: center;
+  justify-content: center;
+  /* margin: 0px 40px 0px 40px; */
+}
+/* .page2 .main_txt2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-items:center;
+  justify-content: center;
+  justify-items: center;
   margin-bottom: 50ox;
-}
-.main-header h1{
+} */
+.main-header h2{
+  margin-top: 100px;
+  align-items:center;
+  justify-content: center;
   text-align: center;
-  grid-area:main-header ;
-  margin-top: 20px;
-  padding: 100px 100px 30px 100px;
 }
 .main_txt2 p{
   display: flex;
   justify-content: center;
   align-items:center;
-  grid-area:main_txt ;
-  margin: 20px 100px 30px;
+  margin: 50px 100px 30px;
   font-weight: lighter;
 }
 .experience{
-  margin: 20px;
-  padding: 50px;
   display: flex;
   justify-content: center;
   align-items:center;
 }
 
 .experience ul{
+  justify-content: center;
+  align-items:center;
   display: flex;
   text-align: center;
-  max-width: 900px;
   font-weight: lighter;
   list-style:circle;
   color: rgb(35,150,232);
@@ -329,6 +365,8 @@ ion-icon{
 }
 /* PAGE3 */
 .Page3{
+  height: 90%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items:center;
@@ -336,9 +374,16 @@ ion-icon{
   font-family: -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 
 }
-.contact-form{
+
+.Page3 .contact-form{
+  display: block;
+  width: 100%;
+  margin-top: 100px;
+  /* max-width: 500px; */
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  /* align-items:center; */
   /* margin: 20px 400px; */
   gap: 20px;
 
@@ -364,5 +409,4 @@ button:hover{
 }
 .main-header:hover{
   border-bottom: rgb(35,150,232) 1px solid;
- 
 }
